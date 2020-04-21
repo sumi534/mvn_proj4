@@ -28,4 +28,3 @@ sh "mvn package -f mvn_proj1"
 }
 }
 }
-
