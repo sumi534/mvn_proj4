@@ -1,18 +1,11 @@
-pipeline
-{
-agent any
-{
-dockerfile true
-}
-stages
-{
-stage('test')
-{
-steps
-{
-sh "node --version"
-sh "svn --version"
-}
-}
-}
+pipeline {
+    agent { dockerfile true }
+    stages {
+        stage('Test') {
+            steps {
+                sh 'node --version'
+                sh 'svn --version'
+            }
+        }
+    }
 }
