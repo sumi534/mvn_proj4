@@ -16,14 +16,14 @@ stage('test')
 {
 steps
 {
-sh "mvn test -f mvn_proj1"
+sh "mvn test -f mvn_proj4"
 }
 }
 stage('package')
 {
 steps
 {
-sh "mvn package -f mvn_proj1"
+sh "mvn package -f mvn_proj4"
 }
 }
 }
