@@ -1,5 +1,3 @@
-FROM ubuntu
-RUN apt-get update
-RUN echo "Hello world"
-CMD ["echo","welcome"]
+FROM node:7-alpine
 
+RUN apk add -U subversion
